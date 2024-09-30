@@ -1,0 +1,93 @@
+@use "variables" as var;
+@use "mixins" as mx;
+
+// poppins
+%main-logo {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1;
+}
+
+%main-title {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 1;
+}
+%secondary-title {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 1;
+}
+%section-title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1;
+}
+%accent-title {
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 1;
+}
+
+%accent-text {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 1.41176;
+}
+
+//inter
+%main-text {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 1.64706;
+}
+%main-table {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1;
+}
+%table-description {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1;
+}
+%table-subtext {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1;
+}
+%article-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 0.58333;
+}
+%secondary-description {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.16667;
+}
+%tetriatry-title {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+//open sans
+%accent-details {
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 1;
+}
+%card-article {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.28571;
+  letter-spacing: 0.03em;
+}
+
+%section-frame {
+  padding: 50px 16px;
+
+  @include mx.mq("lg") {
+    padding: 100px 135px 110px 135px;
+  }
+}

@@ -1,0 +1,32 @@
+@use "sass:map";
+@use "sass:list";
+
+@use "variables" as var;
+
+@mixin mq($bp, $type: min) {
+  @if map.has-key($map: var.$breakpoints, $key: $bp) {
+    $width: map-get(
+      $map: var.$breakpoints,
+      $key: $bp,
+    );
+
+    @if $type==max {
+      $width: $width - 0.02px;
+    }
+    @media screen and (#{$type}-width: $width) {
+      @content;
+    }
+  }
+}
+
+@mixin ease($type, $props...) {
+  @if map.has-key(var.$easings, $type) {
+    $ease: map-get(var.$easings, $type);
+    transform: $ease;
+  } @else {
+    @warn 'no key';
+  }
+  @if (list.length($props) > 0) {
+    transition-property: $props;
+  }
+}

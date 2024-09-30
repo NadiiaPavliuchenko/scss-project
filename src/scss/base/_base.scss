@@ -1,0 +1,16 @@
+@use "../utils/variables" as var;
+@use "../utils/functions" as fn;
+@use "../utils/placeholders";
+
+body {
+  @extend %main-text;
+  font-family: var.$main-font, sans-serif;
+  color: fn.get-color("light");
+  background-color: fn.get-color("primary-background");
+}
+
+button {
+  font-family: inherit;
+  color: fn.get-color("current");
+  cursor: pointer;
+}

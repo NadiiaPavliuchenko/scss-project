@@ -1,0 +1,10 @@
+@use "variables" as var;
+@use "sass:map";
+
+@function get-color($color-name) {
+  @return map.get(var.$colors, $color-name);
+}
+
+@function get-font($font-family) {
+  @return map.get(var.$fonts, $font-family);
+}

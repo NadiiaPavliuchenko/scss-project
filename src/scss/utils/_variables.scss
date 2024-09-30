@@ -1,0 +1,44 @@
+$breakpoints: (
+  "sm": 375px,
+  "md": 768px,
+  "lg": 1440px,
+);
+
+$colors: (
+  "primary-white": #fff,
+  "primary-black": #171717,
+  "paragraph": #4f4f4f,
+  "details": #616161,
+  "secondary-background": #fff6fb,
+  "primary-background": #1b004e,
+  "gradient-purple": #4e0062,
+  "gradient-blue": #220076,
+  "icon-blue": #0071bc,
+  "upgrade": #1aff7c,
+  "downfall": #ff1a1a,
+  "button-color": #eb5757,
+  "download": #d7c2ff,
+  "linear-gradient": linear-gradient(197deg, #4e0062 0%, #220076 100%),
+  "transparent": transparent,
+  "current": currentColor,
+);
+
+$fonts: (
+  "main-family": "Inter",
+  "second-family": "Poppins",
+  "third-family": "Open Sans",
+);
+
+$font-weights: (
+  "Regular": 400,
+  "Medium": 500,
+  "Semibold": 600,
+  "Bold": 700,
+);
+
+$main-font: "Inter";
+
+$easings: (
+  "slow": 600ms ease,
+  "fast": 300ms ease,
+);

@@ -1,0 +1,18 @@
+@use "../utils/variables" as var;
+@use "../utils/functions" as fn;
+@use "../utils/placeholders";
+
+$fonts: var.$fonts;
+$font-weights: var.$font-weights;
+
+@each $key, $value in $fonts {
+  @each $font, $weight in $font-weights {
+    @font-face {
+      font-family: $value;
+      src: url("../../../public/fonts/#{$value}-#{$font}.ttf") format("ttf");
+      font-weight: $weight;
+      font-style: normal;
+      font-display: swap;
+    }
+  }
+}
