@@ -1,0 +1,14 @@
+@use "reset";
+@import "normalize.css";
+@import "variables.scss";
+
+#app {
+  width: 100vw;
+  height: 100vh;
+  background-color: tomato;
+  .test {
+    width: 100px;
+    height: 100px;
+    background-color: $primary;
+  }
+}
