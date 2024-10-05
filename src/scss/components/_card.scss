@@ -1,0 +1,50 @@
+@use "../utils/variables" as var;
+@use "../utils/functions" as fn;
+@use "../utils/placeholders";
+@use "../utils/mixins" as mx;
+
+.card {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: fn.get-color("shadow");
+  width: 343px;
+
+  @include mx.mq("lg") {
+    width: 368px;
+  }
+
+  &-content {
+    color: fn.get-color("primary-black");
+    background-color: fn.get-color("primary-white");
+    padding: 25px 7px;
+    @include mx.mq("lg") {
+      padding: 25px 19px;
+    }
+  }
+  &-title {
+    @extend %accent-title;
+    font-family: fn.get-font("second-family"), sans-serif;
+    margin-bottom: 14px;
+  }
+  &-info {
+    @extend %card-article;
+    font-family: fn.get-font("third-family"), sans-serif;
+    color: fn.get-color("paragraph");
+    margin-bottom: 28px;
+  }
+  &-details {
+    @extend %accent-details;
+    font-family: fn.get-font("third-family"), sans-serif;
+    display: flex;
+    justify-content: space-between;
+    color: fn.get-color("details");
+  }
+  &-note {
+    display: flex;
+    gap: 5px;
+  }
+
+  &-icon {
+    stroke: fn.get-color("current");
+  }
+}

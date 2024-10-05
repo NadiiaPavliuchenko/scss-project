@@ -1,0 +1,29 @@
+@use "../../utils/variables" as var;
+@use "../../utils/functions" as fn;
+@use "../../utils/placeholders";
+
+$padding-x: 14px !default;
+$padding-y: 7px !default;
+$desc-padding-x: 30px !default;
+$desc-padding-y: 15px !default;
+$min-width: 136px !default;
+$min-height: 31px !default;
+$desc-min-width: 139px !default;
+$desc-min-height: 47px !default;
+
+$border-radius: 50px;
+$text-align: center;
+
+$text-size: 14px !default;
+$desc-text-size: 17px !default;
+$text-weight: 500 !default;
+$text-font: fn.get-font("second-family") sans-serif;
+$text-line-height: 1 !default;
+$text-color: fn.get-color("primary-white");
+
+$btn-types: (primary, frame);
+
+@import "btn-base";
+
+@import "primary";
+@import "frame";

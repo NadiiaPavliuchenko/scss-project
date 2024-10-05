@@ -1,0 +1,38 @@
+@use "../utils/variables" as var;
+@use "../utils/functions" as fn;
+@use "../utils/placeholders";
+@use "../utils/mixins" as mx;
+
+.prices-container {
+  @extend %container-frame;
+}
+.prices-title {
+}
+.prices-table {
+}
+.arrow {
+}
+.info {
+}
+.star {
+}
+.table-logo {
+}
+.table-crypto-name {
+}
+.trade-arrow {
+}
+.trade-value {
+}
+.table-content {
+}
+.table-details {
+}
+.table-diagram {
+}
+.chart-up {
+}
+.dots {
+}
+.chart-down {
+}

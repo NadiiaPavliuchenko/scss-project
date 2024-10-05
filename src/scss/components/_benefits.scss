@@ -1,0 +1,65 @@
+@use "../utils/variables" as var;
+@use "../utils/functions" as fn;
+@use "../utils/placeholders";
+@use "../utils/mixins" as mx;
+
+.benefits {
+  background-color: fn.get-color("secondary-background");
+  color: fn.get-color("primary-black");
+
+  .benefits-container {
+    @extend %container-frame;
+  }
+  .benefits-title {
+    @extend %section-title;
+    text-align: center;
+    font-family: fn.get-font("second-family"), sans-serif;
+
+    margin-bottom: 30px;
+
+    @include mx.mq("lg") {
+      margin-bottom: 60px;
+    }
+  }
+}
+.benefits-list {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+
+  @include mx.mq("md") {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.benefits-item {
+  text-align: center;
+  @include mx.mq("lg") {
+    text-align: start;
+  }
+}
+.benefits-icon {
+  margin-bottom: 30px;
+  @include mx.mq("lg") {
+    margin-bottom: 45px;
+  }
+}
+.benefits-subtitle {
+  @extend %tetriatry-title;
+  font-family: fn.get-font("first-family"), sans-serif;
+  margin-bottom: 20px;
+  @include mx.mq("lg") {
+    margin-bottom: 30px;
+    font-size: 24px;
+  }
+}
+.benefits-summary {
+  @extend %article-text;
+  font-family: fn.get-font("first-family"), sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  @include mx.mq("md") {
+    gap: 30px;
+  }
+}

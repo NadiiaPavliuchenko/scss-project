@@ -1,0 +1,33 @@
+@use "../../utils/mixins" as mx;
+
+.btn {
+  display: block;
+  text-align: center;
+  padding: $padding-y $padding-x;
+
+  min-width: $min-width;
+  min-height: $min-height;
+
+  border-radius: $border-radius;
+
+  font-family: $text-font;
+  font-size: $text-size;
+  font-weight: $text-weight;
+  line-height: $text-line-height;
+
+  color: $text-color;
+
+  cursor: pointer;
+  text-transform: none;
+  background-color: transparent;
+  border: none;
+  margin: 0;
+  overflow: visible;
+
+  @include mx.mq("lg") {
+    padding: $desc-padding-y $desc-padding-x;
+    min-width: $desc-min-width;
+    min-height: $desc-min-height;
+    font-size: $desc-text-size;
+  }
+}

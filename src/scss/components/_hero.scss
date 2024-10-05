@@ -1,0 +1,74 @@
+@use "../utils/variables" as var;
+@use "../utils/functions" as fn;
+@use "../utils/placeholders";
+@use "../utils/mixins" as mx;
+
+.hero {
+  @include mx.mq("lg") {
+    width: 100%;
+    height: 700px;
+    background: fn.get-color("linear-gradient");
+    background-size: cover;
+    -webkit-clip-path: url(#hero-shape);
+    clip-path: url(#hero-shape);
+  }
+}
+.hero-container {
+  @extend %container-frame;
+
+  position: relative;
+  padding-top: 115px;
+  margin: 0 auto;
+
+  @include mx.mq("lg") {
+    padding-top: 150px;
+    padding-bottom: 266px;
+
+    display: flex;
+    align-items: center;
+    gap: 22px;
+  }
+}
+.hero-shape-svg {
+  position: absolute;
+  width: 0;
+  height: 0;
+
+  @include mx.mq("lg", max) {
+    display: none;
+  }
+}
+.hero-title {
+  @extend %main-logo;
+  font-family: fn.get-font("second-family"), sans-serif;
+  margin-bottom: 13px;
+  @include mx.mq("lg", max) {
+    text-align: center;
+  }
+  @include mx.mq("lg") {
+    width: 665px;
+    font-size: 60px;
+    margin-bottom: 10px;
+  }
+}
+.header-details {
+  @extend %main-text;
+  margin-bottom: 32px;
+  @include mx.mq("lg") {
+    width: 500px;
+    margin-bottom: 20px;
+  }
+  @include mx.mq("lg", max) {
+    text-align: center;
+  }
+}
+.hero-btn {
+  @include mx.mq("lg", max) {
+    margin: 0 auto;
+  }
+}
+.hero-img {
+  @include mx.mq("lg", max) {
+    display: none;
+  }
+}

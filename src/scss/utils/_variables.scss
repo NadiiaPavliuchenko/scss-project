@@ -19,6 +19,14 @@ $colors: (
   "button-color": #eb5757,
   "download": #d7c2ff,
   "linear-gradient": linear-gradient(197deg, #4e0062 0%, #220076 100%),
+  "menu-gradient":
+    linear-gradient(
+      0deg,
+      rgba(34, 0, 118, 1) 0%,
+      rgba(78, 0, 98, 1) 50%,
+      rgba(27, 0, 78, 1) 100%
+    ),
+  "shadow": 0 4px 8px 0 rgba(203, 203, 203, 0.25),
   "transparent": transparent,
   "current": currentColor,
 );

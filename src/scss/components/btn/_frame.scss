@@ -1,0 +1,17 @@
+@if index($list: $btn-types, $value: frame) {
+  .btn--frame {
+    background-color: transparent;
+    border: 2px solid #eb5757;
+
+    &:active {
+      border-color: #fff500;
+    }
+
+    @media (hover: hover) {
+      &:hover,
+      :focus {
+        border-color: #ee4848;
+      }
+    }
+  }
+}

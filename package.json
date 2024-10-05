@@ -14,6 +14,7 @@
     "vite": "^5.4.1"
   },
   "dependencies": {
+    "body-scroll-lock": "^4.0.0-beta.0",
     "normalize.css": "^8.0.1"
   }
 }
