@@ -1,15 +1,31 @@
+@use "../../utils/mixins" as mx;
+
 @if index($btn-types, primary) {
   .btn--primary {
     background-color: #eb5757;
+    position: relative;
+    overflow: hidden;
 
-    &:active {
-      background-color: #fff500;
+    span {
+      position: relative;
+    }
+
+    &:before {
+      @include mx.ease("fast");
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      clip-path: circle(0 at center);
+      background-color: #fff;
+      opacity: 0.1;
     }
 
     @media (hover: hover) {
-      &:hover,
-      :focus {
-        background-color: #ee4848;
+      &:hover:before {
+        clip-path: circle(100px at center);
       }
     }
   }
