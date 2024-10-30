@@ -1,12 +1,5 @@
 import "../scss/style.scss";
 import * as bodyScrollLock from "body-scroll-lock";
-import Swiper from "swiper";
-
-const swiper = new Swiper(".mySwiper", {
-  pagination: {
-    el: ".swiper-pagination",
-  },
-});
 
 const refs = {
   openMenu: document.querySelector(".burgerBtn"),
