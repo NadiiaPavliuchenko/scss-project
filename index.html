@@ -2,14 +2,709 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" href="/scss-project/favicon/favicon.png" type="image/x-icon" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-    <script type="module" crossorigin src="/scss-project/assets/index-xGiNfEnx.js"></script>
-    <link rel="stylesheet" crossorigin href="/scss-project/assets/index-Bqz_EnrF.css">
+    <title>Cryptous</title>
+    <script type="module" crossorigin src="/scss-project/assets/index-CLRad3Xf.js"></script>
+    <link rel="stylesheet" crossorigin href="/scss-project/assets/index-BdchPK6I.css">
   </head>
   <body>
-    <div id="app">
-      <div class="test"></div>
+    <header class="header">
+      <div class="logo">
+        <img src="/scss-project/images/logo.png" alt="logo" width="36" height="40" />
+        <span class="logo-name">Cryptous</span>
+      </div>
+      <nav class="header-navigation">
+        <ul class="nav">
+          <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Company</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Team</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
+        </ul>
+      </nav>
+      <button type="button" class="btn header-btn btn--frame">Trade Now</button>
+    </header>
+    <div class="backdrop">
+      <div class="burgerBtn"></div>
+      <div class="mobile-menu">
+        <ul class="menu-nav-list">
+          <li class="menu-nav-item">
+            <a href="#" class="menu-nav-link">Home</a>
+          </li>
+          <li class="menu-nav-item">
+            <a href="#" class="menu-nav-link">Company</a>
+          </li>
+          <li class="menu-nav-item">
+            <a href="#" class="menu-nav-link">About</a>
+          </li>
+          <li class="menu-nav-item">
+            <a href="#" class="menu-nav-link">Pricing</a>
+          </li>
+          <li class="menu-nav-item">
+            <a href="#" class="menu-nav-link">Team</a>
+          </li>
+          <li class="menu-nav-item">
+            <a href="#" class="menu-nav-link">Contact</a>
+          </li>
+          <li class="menu-nav-item">
+            <a href="#" class="menu-nav-link">Blog</a>
+          </li>
+        </ul>
+        <button type="button" class="btn btn--frame menu-btn">Trade Now</button>
+      </div>
     </div>
+    <main class="main">
+      <svg class="hero-shape-svg" xmlns="http://www.w3.org/2000/svg">
+        <clipPath id="hero-shape" clipPathUnits="objectBoundingBox">
+          <path
+            d="M0,0 h1 v0.874 C0.795,0.874,0.685,1,0.481,1 c-0.186,0,-0.295,-0.126,-0.481,-0.126 V0"
+          />
+        </clipPath>
+      </svg>
+      <section class="hero">
+        <div class="hero-container">
+          <div class="hero-content">
+            <h1 class="hero-title">Make better businees with Cryptocurrency</h1>
+            <p class="header-details">
+              We offers users a fully operational long-term rental platform. It
+              plans to leverages blockchain technology.
+            </p>
+            <button type="button" class="btn hero-btn btn--primary">
+              <span>Get Whitelisted</span>
+            </button>
+          </div>
+          <img
+            src="/scss-project/images/illustration.png"
+            alt="crypto coins"
+            class="hero-img"
+            width="614"
+            height="474"
+          />
+        </div>
+      </section>
+      <section class="section prices">
+        <div class="prices-container">
+          <h2 class="prices-title">Today's Cryptocurrency Prices</h2>
+          <table class="prices-table">
+            <thead>
+              <th>
+                #
+                <svg class="arrow" width="5" height="5">
+                  <use href="/scss-project/images/icons.svg#arrow-up"></use>
+                </svg>
+              </th>
+              <th>Name</th>
+              <th>Price</th>
+              <th>24h %</th>
+              <th>7d %</th>
+              <th>
+                Market cap
+                <svg class="info" width="14" height="14">
+                  <use href="/scss-project/images/icons.svg#info"></use>
+                </svg>
+              </th>
+              <th>Volume(24h)</th>
+              <th>Last 7 days</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <svg class="star" width="12" height="12">
+                    <use href="/scss-project/images/icons.svg#star"></use>
+                  </svg>
+                  1
+                </td>
+                <td>
+                  <img
+                    src="/scss-project/images/Ellipse 2.png"
+                    alt="bitcoin logo"
+                    class="table-logo"
+                    width="24"
+                    height="24"
+                  />
+                  <p class="table-crypto-name">Bitcoin<span>BTC</span></p>
+                </td>
+                <td>$55,206.61</td>
+                <td>
+                  <svg class="trade-arrow" width="7" height="6">
+                    <use href="/scss-project/images/icons.svg#arrow-up"></use>
+                    <use href="/scss-project/images/icons.svg#arrow-down"></use>
+                  </svg>
+                  <p class="trade-value">0.92%</p>
+                </td>
+                <td>
+                  <svg class="trade-arrow" width="7" height="6">
+                    <use href="/scss-project/images/icons.svg#arrow-up"></use>
+                    <use href="/scss-project/images/icons.svg#arrow-down"></use>
+                  </svg>
+                  <p class="trade-value">15.86%</p>
+                </td>
+                <td>$1,046,899,935,348</td>
+                <td>
+                  <div class="table-content">
+                    <p>$1,046,899,935,348</p>
+                    <p class="table-details">653,452 BTC</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table-diagram">
+                    <svg class="chart-up" width="100" height="30">
+                      <use href="/scss-project/images/icons.svg#chart-up"></use>
+                    </svg>
+                    <svg class="dots" width="3" height="13">
+                      <use href="/scss-project/images/icons.svg#more"></use>
+                    </svg>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <svg class="star" width="12" height="12">
+                    <use href="/scss-project/images/icons.svg#star"></use>
+                  </svg>
+                  2
+                </td>
+                <td>
+                  <img
+                    src="/scss-project/images/Ellipse_1.png"
+                    alt="Ethereum logo"
+                    class="table-logo"
+                    width="24"
+                    height="24"
+                  />
+                  <p class="table-crypto-name">Ethereum<span>ETH</span></p>
+                </td>
+                <td>$55,206.61</td>
+                <td>
+                  <svg class="trade-arrow" width="7" height="6">
+                    <use href="/scss-project/images/icons.svg#arrow-up"></use>
+                    <use href="/scss-project/images/icons.svg#arrow-down"></use>
+                  </svg>
+                  <p class="trade-value">0.92%</p>
+                </td>
+                <td>
+                  <svg class="trade-arrow" width="7" height="6">
+                    <use href="/scss-project/images/icons.svg#arrow-up"></use>
+                    <use href="/scss-project/images/icons.svg#arrow-down"></use>
+                  </svg>
+                  <p class="trade-value">15.86%</p>
+                </td>
+                <td>$1,046,899,935,348</td>
+                <td>
+                  <div class="table-content">
+                    <p>$1,046,899,935,348</p>
+                    <p class="table-details">653,452 BTC</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table-diagram">
+                    <svg class="chart-up" width="100" height="30">
+                      <use href="/scss-project/images/icons.svg#chart-up"></use>
+                    </svg>
+                    <svg class="dots" width="3" height="13">
+                      <use href="/scss-project/images/icons.svg#more"></use>
+                    </svg>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <svg class="star" width="12" height="12">
+                    <use href="/scss-project/images/icons.svg#star"></use>
+                  </svg>
+                  3
+                </td>
+                <td>
+                  <img
+                    src="/scss-project/images/Ellipse_6.png"
+                    alt="Cardano logo"
+                    class="table-logo"
+                    width="24"
+                    height="24"
+                  />
+                  <p class="table-crypto-name">Cardano<span>ADA</span></p>
+                </td>
+                <td>$55,206.61</td>
+                <td>
+                  <svg class="trade-arrow" width="7" height="6">
+                    <use href="/scss-project/images/icons.svg#arrow-up"></use>
+                    <use href="/scss-project/images/icons.svg#arrow-down"></use>
+                  </svg>
+                  <p class="trade-value">0.92%</p>
+                </td>
+                <td>
+                  <svg class="trade-arrow" width="7" height="6">
+                    <use href="/scss-project/images/icons.svg#arrow-up"></use>
+                    <use href="/scss-project/images/icons.svg#arrow-down"></use>
+                  </svg>
+                  <p class="trade-value">15.86%</p>
+                </td>
+                <td>$1,046,899,935,348</td>
+                <td>
+                  <div class="table-content">
+                    <p>$1,046,899,935,348</p>
+                    <p class="table-details">653,452 BTC</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table-diagram">
+                    <svg class="chart-down" width="100" height="30">
+                      <use href="/scss-project/images/icons.svg#chart-down"></use>
+                    </svg>
+                    <svg class="dots" width="3" height="13">
+                      <use href="/scss-project/images/icons.svg#more"></use>
+                    </svg>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <svg class="star" width="12" height="12">
+                    <use href="/scss-project/images/icons.svg#star"></use>
+                  </svg>
+                  4
+                </td>
+                <td>
+                  <img
+                    src="/scss-project/images/Ellipse_3.png"
+                    alt="Tether logo"
+                    class="table-logo"
+                    width="24"
+                    height="24"
+                  />
+                  <p class="table-crypto-name">Tether<span>USDT</span></p>
+                </td>
+                <td>$55,206.61</td>
+                <td>
+                  <svg class="trade-arrow" width="7" height="6">
+                    <use href="/scss-project/images/icons.svg#arrow-up"></use>
+                    <use href="/scss-project/images/icons.svg#arrow-down"></use>
+                  </svg>
+                  <p class="trade-value">0.92%</p>
+                </td>
+                <td>
+                  <svg class="trade-arrow" width="7" height="6">
+                    <use href="/scss-project/images/icons.svg#arrow-up"></use>
+                    <use href="/scss-project/images/icons.svg#arrow-down"></use>
+                  </svg>
+                  <p class="trade-value">15.86%</p>
+                </td>
+                <td>$1,046,899,935,348</td>
+                <td>
+                  <div class="table-content">
+                    <p>$1,046,899,935,348</p>
+                    <p class="table-details">653,452 BTC</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table-diagram">
+                    <svg class="chart-up" width="100" height="30">
+                      <use href="/scss-project/images/icons.svg#chart-up"></use>
+                    </svg>
+                    <svg class="dots" width="3" height="13">
+                      <use href="/scss-project/images/icons.svg#more"></use>
+                    </svg>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <svg class="star" width="12" height="12">
+                    <use href="/scss-project/images/icons.svg#star"></use>
+                  </svg>
+                  5
+                </td>
+                <td>
+                  <img
+                    src="/scss-project/images/Ellipse_4.png"
+                    alt="Avalanche logo"
+                    class="table-logo"
+                    width="24"
+                    height="24"
+                  />
+                  <p class="table-crypto-name">Avalanche<span>AVAX</span></p>
+                </td>
+                <td>$55,206.61</td>
+                <td>
+                  <svg class="trade-arrow" width="7" height="6">
+                    <use href="/scss-project/images/icons.svg#arrow-up"></use>
+                    <use href="/scss-project/images/icons.svg#arrow-down"></use>
+                  </svg>
+                  <p class="trade-value">0.92%</p>
+                </td>
+                <td>
+                  <svg class="trade-arrow" width="7" height="6">
+                    <use href="/scss-project/images/icons.svg#arrow-up"></use>
+                    <use href="/scss-project/images/icons.svg#arrow-down"></use>
+                  </svg>
+                  <p class="trade-value">15.86%</p>
+                </td>
+                <td>$1,046,899,935,348</td>
+                <td>
+                  <div class="table-content">
+                    <p>$1,046,899,935,348</p>
+                    <p class="table-details">653,452 BTC</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table-diagram">
+                    <svg class="chart-down" width="100" height="30">
+                      <use href="/scss-project/images/icons.svg#chart-down"></use>
+                    </svg>
+                    <svg class="dots" width="3" height="13">
+                      <use href="/scss-project/images/icons.svg#more"></use>
+                    </svg>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <svg class="star" width="12" height="12">
+                    <use href="/scss-project/images/icons.svg#star"></use>
+                  </svg>
+                  6
+                </td>
+                <td>
+                  <img
+                    src="/scss-project/images/Ellipse_5.png"
+                    alt="Algorand logo"
+                    class="table-logo"
+                    width="24"
+                    height="24"
+                  />
+                  <p class="table-crypto-name">Algorand<span>ALGO</span></p>
+                </td>
+                <td>$55,206.61</td>
+                <td>
+                  <svg class="trade-arrow" width="7" height="6">
+                    <use href="/scss-project/images/icons.svg#arrow-up"></use>
+                    <use href="/scss-project/images/icons.svg#arrow-down"></use>
+                  </svg>
+                  <p class="trade-value">0.92%</p>
+                </td>
+                <td>
+                  <svg class="trade-arrow" width="7" height="6">
+                    <use href="/scss-project/images/icons.svg#arrow-up"></use>
+                    <use href="/scss-project/images/icons.svg#arrow-down"></use>
+                  </svg>
+                  <p class="trade-value">15.86%</p>
+                </td>
+                <td>$1,046,899,935,348</td>
+                <td>
+                  <div class="table-content">
+                    <p>$1,046,899,935,348</p>
+                    <p class="table-details">653,452 BTC</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table-diagram">
+                    <svg class="chart-up" width="100" height="30">
+                      <use href="/scss-project/images/icons.svg#chart-up"></use>
+                    </svg>
+                    <svg class="dots" width="3" height="13">
+                      <use href="/scss-project/images/icons.svg#more"></use>
+                    </svg>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <section class="section benefits">
+        <div class="benefits-container">
+          <h2 class="benefits-title">
+            The most trusted cryptocurrency platform
+          </h2>
+          <ul class="benefits-list">
+            <li class="benefits-item">
+              <svg class="benefits-icon" width="66" height="70">
+                <use href="/scss-project/images/icons.svg#list-icon-1"></use>
+              </svg>
+              <h3 class="benefits-subtitle">Ease of Trading</h3>
+              <ul class="benefits-summary">
+                <li>Intuitive interface</li>
+                <li>Instant deposit options</li>
+                <li>Cash out directly to your bank account</li>
+              </ul>
+            </li>
+            <li class="benefits-item">
+              <svg class="benefits-icon" width="66" height="70">
+                <use href="/scss-project/images/icons.svg#list-icon-2"></use>
+              </svg>
+              <h3 class="benefits-subtitle">Institutional-grade Security</h3>
+              <ul class="benefits-summary">
+                <li>98% of assets stored safely offline</li>
+                <li>Highly encrypted personal data</li>
+                <li>Whitelisting and transaction confirmations</li>
+              </ul>
+            </li>
+            <li class="benefits-item">
+              <svg class="benefits-icon" width="66" height="70">
+                <use href="/scss-project/images/icons.svg#list-icon-3"></use>
+              </svg>
+              <h3 class="benefits-subtitle">Proven Reliability</h3>
+              <ul class="benefits-summary">
+                <li>Exchanging bitcoin since 2011</li>
+                <li>Industry-leading uptime</li>
+                <li>24/7 dedicated support</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="section download">
+        <div class="download-description">
+          <h2 class="download-title">Try the future, today. Download Crypto</h2>
+          <p class="download-article">
+            Stay connected to the market with our mobile app. Featuring advanced
+            order types and analytical tools for experienced traders, as well as
+            a simple buy & sell interface for those just getting started.
+          </p>
+        </div>
+        <img
+          src="/scss-project/images/app.png"
+          alt="Cryptous mobile app"
+          class="download-img"
+          width="203"
+          height="216"
+        />
+        <ul class="app-links">
+          <li class="app-item">
+            <a
+              class="app-link"
+              target="_blank"
+              href="https://apps.apple.com/ru/developer/apple/id284417353?mt=12"
+              ><svg class="app-icon" width="159" height="55">
+                <use href="/scss-project/images/icons.svg#app-store"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="app-item">
+            <a
+              class="app-link"
+              target="_blank"
+              href="https://play.google.com/store/games?device=windows"
+              ><svg class="app-icon" width="159" height="55">
+                <use href="/scss-project/images/icons.svg#google-play"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section class="section articles">
+        <h2 class="articles-title">Learn to thrive</h2>
+        <ul class="articles-cards">
+          <li class="card">
+            <img
+              src="/scss-project/images/img.png"
+              alt="crypto diagram"
+              class="card-img"
+              width="434"
+              height="207"
+            />
+            <div class="card-content">
+              <h3 class="card-title">
+                New Leveraged Pairs Added to Margin Trading on the Crypto.com
+                Exchange
+              </h3>
+              <p class="card-info">
+                We urge everyone adopt good cybersecurity habits, and to have
+                unique passwords on every site they use...
+              </p>
+              <div class="card-details">
+                <p class="author">By: Jennia Peris</p>
+                <div class="card-note">
+                  <svg class="card-icon" width="10" height="10">
+                    <use href="/scss-project/images/icons.svg#calendar"></use>
+                  </svg>
+                  <p class="date">15/07/2021</p>
+                </div>
+                <div class="card-note">
+                  <svg class="card-icon" width="10" height="10">
+                    <use href="/scss-project/images/icons.svg#time"></use>
+                  </svg>
+                  <p class="time">5 Min to read</p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="card">
+            <img
+              src="/scss-project/images/img_1.png"
+              alt="trading chart"
+              class="card-img"
+              width="434"
+              height="207"
+            />
+            <div class="card-content">
+              <h3 class="card-title">
+                New Leveraged Pairs Added to Margin Trading on the Crypto.com
+                Exchange
+              </h3>
+              <p class="card-info">
+                We urge everyone adopt good cybersecurity habits, and to have
+                unique passwords on every site they use...
+              </p>
+              <div class="card-details">
+                <p class="author">By: Jennia Peris</p>
+                <div class="card-note">
+                  <svg class="card-icon" width="10" height="10">
+                    <use href="/scss-project/images/icons.svg#calendar"></use>
+                  </svg>
+                  <p class="date">15/07/2021</p>
+                </div>
+                <div class="card-note">
+                  <svg class="card-icon" width="10" height="10">
+                    <use href="/scss-project/images/icons.svg#time"></use>
+                  </svg>
+                  <p class="time">5 Min to read</p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="card">
+            <img
+              src="/scss-project/images/img_2.png"
+              alt="crypto coins"
+              class="card-img"
+              width="434"
+              height="207"
+            />
+            <div class="card-content">
+              <h3 class="card-title">
+                New Leveraged Pairs Added to Margin Trading on the Crypto.com
+                Exchange
+              </h3>
+              <p class="card-info">
+                We urge everyone adopt good cybersecurity habits, and to have
+                unique passwords on every site they use...
+              </p>
+              <div class="card-details">
+                <p class="author">By: Jennia Peris</p>
+                <div class="card-note">
+                  <svg class="card-icon" width="10" height="10">
+                    <use href="/scss-project/images/icons.svg#calendar"></use>
+                  </svg>
+                  <p class="date">15/07/2021</p>
+                </div>
+                <div class="card-note">
+                  <svg class="card-icon" width="10" height="10">
+                    <use href="/scss-project/images/icons.svg#time"></use>
+                  </svg>
+                  <p class="time">5 Min to read</p>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="section subscribe">
+        <h2 class="subscribe-title">Never miss a drop</h2>
+        <p class="subscribe-description">
+          Subscribe for the latest news, drops & collectibles
+        </p>
+        <label class="subscribe-form">
+          <input
+            type="email"
+            class="email"
+            name="email"
+            placeholder="Enter your email address"
+          />
+          <button type="submit" class="btn subscribe-btn btn--primary">
+            <span>Subscribe</span>
+          </button>
+        </label>
+      </section>
+    </main>
+    <footer class="section footer">
+      <ul class="footer-offers">
+        <li class="offers-item">
+          <h4 class="offer-heading">Company</h4>
+          <ul class="offer-list">
+            <li class="offer-link"><a href="#">About us </a></li>
+            <li class="offer-link"><a href="#">Terms of use</a></li>
+            <li class="offer-link"><a href="#">Privacy Policy</a></li>
+            <li class="offer-link"><a href="#">Disclaimer</a></li>
+          </ul>
+        </li>
+        <li class="offers-item">
+          <h4 class="offer-heading">Businesses</h4>
+          <ul class="offer-list">
+            <li><a class="offer-link" href="#">Prime </a></li>
+            <li><a class="offer-link" href="#">Custody</a></li>
+            <li><a class="offer-link" href="#">Asset Hub</a></li>
+            <li><a class="offer-link" href="#">Commerce</a></li>
+          </ul>
+        </li>
+        <li class="offers-item">
+          <h4 class="offer-heading">Exchange</h4>
+          <ul class="offer-list">
+            <li><a class="offer-link" href="#">Exchange Home </a></li>
+            <li><a class="offer-link" href="#">Margin Trading</a></li>
+            <li><a class="offer-link" href="#">Derivatives Trading</a></li>
+            <li><a class="offer-link" href="#">Trading Arena</a></li>
+          </ul>
+        </li>
+        <li class="offers-item">
+          <h4 class="offer-heading">Blockchain</h4>
+          <ul class="offer-list">
+            <li><a class="offer-link" href="#">Chain Explorer </a></li>
+            <li><a class="offer-link" href="#">The Syndicate</a></li>
+            <li><a class="offer-link" href="#">Security</a></li>
+            <li><a class="offer-link" href="#">Cryptous Credit</a></li>
+          </ul>
+        </li>
+        <li class="offers-item">
+          <h4 class="offer-heading">Resources</h4>
+          <ul class="offer-list">
+            <li><a class="offer-link" href="#">Prices </a></li>
+            <li><a class="offer-link" href="#">Site Widgets</a></li>
+            <li><a class="offer-link" href="#">Tax</a></li>
+            <li><a class="offer-link" href="#">Blog</a></li>
+            <li><a class="offer-link" href="#">Research</a></li>
+          </ul>
+        </li>
+      </ul>
+      <div class="footer-copyrights">
+        <p class="copyright">Copyright 2021, Cryptous</p>
+        <ul class="social-list">
+          <li>
+            <a
+              href="https://www.facebook.com/?locale=uk_UA"
+              class="social-link"
+            >
+              <svg class="social-icon" width="40" height="32">
+                <use href="/scss-project/images/icons.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://x.com/?lang=uk" class="social-link">
+              <svg class="social-icon" width="40" height="32">
+                <use href="/scss-project/images/icons.svg#twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/" class="social-link">
+              <svg class="social-icon" width="40" height="32">
+                <use href="/scss-project/images/icons.svg#linkedin"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/" class="social-link">
+              <svg class="social-icon" width="40" height="32">
+                <use href="/scss-project/images/icons.svg#instagram"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>
