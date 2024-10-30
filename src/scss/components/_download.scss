@@ -3,7 +3,7 @@
 @use "../utils/placeholders";
 @use "../utils/mixins" as mx;
 
-.download {
+.download-container {
   @extend %container-frame;
   display: grid;
   grid-template-rows: repeat(auto-fit, 1fr);
@@ -16,10 +16,11 @@
 
   @include mx.mq("md") {
     justify-items: start;
-    grid-template-rows: repeat(2, 1fr);
     grid-template-areas:
       "t i"
       "l i";
+  }
+  @include mx.mq("lg") {
     gap: 50px 215px;
   }
 }
@@ -27,6 +28,9 @@
   grid-area: t;
   @include mx.mq("md", max) {
     text-align: center;
+  }
+  @include mx.mq("lg") {
+    margin-top: 80px;
   }
 
   .download-title {
@@ -46,7 +50,7 @@
 
     @include mx.mq("md") {
       font-size: 17px;
-      max-width: 500px;
+      max-width: 450px;
     }
   }
 }

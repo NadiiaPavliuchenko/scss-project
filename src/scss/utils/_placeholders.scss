@@ -102,6 +102,10 @@
 %container-frame {
   padding-left: 16px;
   padding-right: 16px;
+  @include mx.mq("md") {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
   @include mx.mq("lg") {
     padding-left: 135px;
     padding-right: 135px;

@@ -1,0 +1,34 @@
+@use "../utils/variables" as var;
+@use "../utils/functions" as fn;
+@use "../utils/placeholders";
+@use "../utils/mixins" as mx;
+
+.articles {
+  @extend %container-frame;
+  background-color: fn.get-color("secondary-background");
+  color: fn.get-color("primary-black");
+  text-align: center;
+}
+
+.articles-title {
+  @extend %section-title;
+  font-family: fn.get-font("second-family"), sans-serif;
+  margin-bottom: 52px;
+  @include mx.mq("lg") {
+    margin-bottom: 45px;
+  }
+}
+
+.articles-cards {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  gap: 36px;
+  @include mx.mq("lg") {
+    flex-direction: row;
+    gap: 33px;
+  }
+}
