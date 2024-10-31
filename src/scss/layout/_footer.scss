@@ -1,0 +1,127 @@
+@use "../utils/variables" as var;
+@use "../utils/functions" as fn;
+@use "../utils/placeholders";
+@use "../utils/mixins" as mx;
+
+.footer {
+  background: fn.get-color("linear-gradient");
+
+  .footer-container {
+    @extend %container-frame;
+  }
+}
+
+.footer-offers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px 82px;
+
+  padding-bottom: 50px;
+  border-bottom: 1px solid fn.get-color("tetriatry-gray");
+
+  @include mx.mq("md") {
+    gap: 0 141px;
+    padding-bottom: 60px;
+  }
+
+  .offer-heading {
+    @extend %tetriatry-title;
+    font-family: fn.get-font("main-family"), sans-serif;
+    margin-bottom: 20px;
+
+    @include mx.mq("md") {
+      margin-bottom: 32px;
+    }
+  }
+
+  .offer-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    color: fn.get-color("tetriatry-gray");
+    opacity: 0.8;
+
+    @include mx.mq("md") {
+      gap: 20px;
+    }
+
+    .offer-link {
+      @extend %article-text;
+      font-family: fn.get-font("main-family"), sans-serif;
+
+      @include mx.mq("md") {
+        font-size: 17px;
+      }
+    }
+  }
+}
+
+.footer-copyrights {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  align-items: center;
+  margin-top: 25px;
+
+  @include mx.mq("md") {
+    margin-top: 45px;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+}
+.copyright {
+  @extend %article-text;
+  font-family: fn.get-font("main-family"), sans-serif;
+  color: fn.get-color("tetriatry-gray");
+
+  order: 2;
+
+  @include mx.mq("md") {
+    order: 1;
+  }
+}
+.social-list {
+  display: flex;
+  flex-direction: row;
+  gap: 17px;
+
+  order: 1;
+
+  @include mx.mq("md") {
+    order: 2;
+  }
+  .social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 30px;
+    height: 32px;
+    padding: 8px;
+
+    border: 1px solid fn.get-color("details");
+    border-radius: 10px;
+
+    color: fn.get-color("details");
+
+    @include mx.ease("fast", background-color, color, border);
+
+    &:hover,
+    :focus {
+      background-color: fn.get-color("button-color");
+      color: fn.get-color("primary-white");
+      border: none;
+    }
+
+    &:active {
+      background-color: fn.get-color("button-color");
+      color: fn.get-color("primary-white");
+      border: none;
+    }
+  }
+  .social-icon {
+    fill: fn.get-color("current");
+  }
+}

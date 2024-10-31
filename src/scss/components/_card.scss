@@ -14,10 +14,12 @@
     width: 368px;
   }
 
-  &:hover,
-  :focus {
-    transform: scale(1.2);
-    box-shadow: fn.get-color("hover-shadow");
+  @include mx.mq("md") {
+    &:hover,
+    :focus {
+      transform: scale(1.1);
+      box-shadow: fn.get-color("hover-shadow");
+    }
   }
 
   &-content {

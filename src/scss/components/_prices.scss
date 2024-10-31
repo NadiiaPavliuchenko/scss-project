@@ -5,10 +5,31 @@
 
 .prices-container {
   @extend %container-frame;
+  text-align: center;
 }
 .prices-title {
+  @extend %section-title;
+  font-family: fn.get-font("second-family"), sans-serif;
+  margin-bottom: 30px;
+
+  @include mx.mq("md") {
+    margin-bottom: 60px;
+  }
+
+  @include mx.mq("md", max) {
+    font-size: 20px;
+  }
 }
 .prices-table {
+  width: 100%;
+  border: 1px solid fn.get-color("details");
+  border-collapse: collapse;
+
+  .hide-mobile {
+    @include mx.mq("md", max) {
+      display: none;
+    }
+  }
 }
 .arrow {
 }
