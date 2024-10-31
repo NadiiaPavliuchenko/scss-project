@@ -1,0 +1,71 @@
+@use "../utils/variables" as var;
+@use "../utils/functions" as fn;
+@use "../utils/placeholders";
+@use "../utils/mixins" as mx;
+
+.subscribe {
+  .subscribe-container {
+    @extend %container-frame;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .subscribe-title {
+    @extend %main-logo;
+    font-family: fn.get-font("second-family"), sans-serif;
+    margin-bottom: 10px;
+
+    @include mx.mq("md") {
+      font-size: 50px;
+      margin-bottom: 14px;
+    }
+  }
+  .subscribe-description {
+    @extend %article-text;
+    font-family: fn.get-font("main-family"), sans-serif;
+    margin-bottom: 30px;
+
+    @include mx.mq("md") {
+      font-size: 24px;
+      margin-bottom: 50px;
+    }
+  }
+}
+
+.subscribe-form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+  border: 2px solid fn.get-color("primary-white");
+  border-radius: 37px;
+  padding: 2px;
+
+  @include mx.mq("md") {
+    width: 578px;
+  }
+
+  .email {
+    @extend %table-description;
+    font-family: fn.get-font("main-family"), sans-serif;
+
+    padding: 0 13px;
+
+    @include mx.mq("md") {
+      font-size: 15px;
+      padding: 0 20px;
+    }
+  }
+
+  .subscribe-btn {
+    min-width: 139px;
+    min-height: 40px;
+
+    @include mx.mq("md") {
+      min-height: 62px;
+      font-size: 17px;
+    }
+  }
+}

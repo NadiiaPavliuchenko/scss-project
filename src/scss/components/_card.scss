@@ -8,9 +8,16 @@
   overflow: hidden;
   box-shadow: fn.get-color("shadow");
   width: 343px;
+  @include mx.ease("slow", transform, box-shadow);
 
   @include mx.mq("lg") {
     width: 368px;
+  }
+
+  &:hover,
+  :focus {
+    transform: scale(1.2);
+    box-shadow: fn.get-color("hover-shadow");
   }
 
   &-content {
