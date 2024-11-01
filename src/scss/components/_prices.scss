@@ -3,6 +3,11 @@
 @use "../utils/placeholders";
 @use "../utils/mixins" as mx;
 
+$trade-statuses: (
+  "up": "upgrade",
+  "down": "downfall",
+);
+
 .prices-container {
   @extend %container-frame;
   text-align: center;
@@ -22,32 +27,128 @@
 }
 .prices-table {
   width: 100%;
-  border: 1px solid fn.get-color("details");
   border-collapse: collapse;
+  font-family: fn.get-font("main-family"), sans-serif;
+
+  th {
+    @extend %main-table;
+    padding-bottom: 20px;
+    position: relative;
+
+    @include mx.mq("md") {
+      border-top: 1px solid fn.get-color("details");
+      padding: 8px 0 20px 0;
+    }
+
+    &:nth-child(2) {
+      text-align: left;
+    }
+
+    .symbol-container {
+      @include mx.mq("lg") {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 3px;
+      }
+
+      .arrow {
+        fill: fn.get-color("primary-white");
+      }
+    }
+  }
+
+  tr {
+    border-bottom: 1px solid fn.get-color("details");
+  }
+
+  td {
+    padding: 20px 0 10px 0;
+    @include mx.mq("md") {
+      padding: 25px 0;
+    }
+
+    &:nth-child(2) {
+      display: flex;
+    }
+
+    .crypto-name {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+
+      .table-crypto-name {
+        @extend %card-article;
+        font-family: fn.get-font("third-family"), sans-serif;
+
+        & span {
+          @extend %accent-details;
+          color: fn.get-color("details");
+          margin-left: 5px;
+        }
+      }
+    }
+
+    .numer-container {
+      @extend %table-description;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+
+      & p {
+        color: fn.get-color("details");
+      }
+
+      .star {
+        stroke: fn.get-color("tetriatry-gray");
+      }
+    }
+
+    .table-content {
+      @extend %main-table;
+
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 10px;
+
+      .table-details {
+        @extend %table-subtext;
+        color: fn.get-color("details");
+      }
+    }
+  }
+
+  .trade-arrow {
+    fill: fn.get-color("current");
+    opacity: 0;
+  }
+
+  @each $key, $value in $trade-statuses {
+    .trade-container[data-status="#{$key}"] & {
+      // fill: fn.get-color("download");
+      .trade-value {
+        color: fn.get-color("primary-black");
+      }
+      .#{$key} {
+        opacity: 1;
+      }
+    }
+  }
 
   .hide-mobile {
-    @include mx.mq("md", max) {
+    @include mx.mq("lg", max) {
       display: none;
     }
   }
 }
-.arrow {
-}
+
 .info {
-}
-.star {
-}
-.table-logo {
-}
-.table-crypto-name {
 }
 .trade-arrow {
 }
 .trade-value {
-}
-.table-content {
-}
-.table-details {
 }
 .table-diagram {
 }
