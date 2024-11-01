@@ -44,6 +44,10 @@ $trade-statuses: (
       text-align: left;
     }
 
+    &:nth-child(7) {
+      text-align: right;
+    }
+
     .symbol-container {
       @include mx.mq("lg") {
         display: flex;
@@ -54,6 +58,15 @@ $trade-statuses: (
 
       .arrow {
         fill: fn.get-color("primary-white");
+      }
+    }
+    .market-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      .info {
+        fill: fn.get-color("current");
       }
     }
   }
@@ -118,21 +131,44 @@ $trade-statuses: (
         color: fn.get-color("details");
       }
     }
-  }
 
-  .trade-arrow {
-    fill: fn.get-color("current");
-    opacity: 0;
-  }
+    .trade-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+    }
 
-  @each $key, $value in $trade-statuses {
-    .trade-container[data-status="#{$key}"] & {
-      // fill: fn.get-color("download");
-      .trade-value {
-        color: fn.get-color("primary-black");
-      }
-      .#{$key} {
+    .up,
+    .down {
+      opacity: 0;
+    }
+
+    @each $key, $value in $trade-statuses {
+      .trade-container[data-status="#{$key}"] .trade-arrow .#{$key} {
         opacity: 1;
+        fill: fn.get-color("#{$value}");
+      }
+      .trade-container[data-status="#{$key}"] .trade-value {
+        color: fn.get-color("#{$value}");
+      }
+    }
+
+    .table-diagram {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      color: fn.get-color("primary-white");
+      .chart-up {
+        stroke: fn.get-color("upgrade");
+      }
+      .chart-down {
+        stroke: fn.get-color("downfall");
+      }
+
+      .dots {
+        fill: fn.get-color("current");
       }
     }
   }
@@ -142,19 +178,4 @@ $trade-statuses: (
       display: none;
     }
   }
-}
-
-.info {
-}
-.trade-arrow {
-}
-.trade-value {
-}
-.table-diagram {
-}
-.chart-up {
-}
-.dots {
-}
-.chart-down {
 }
