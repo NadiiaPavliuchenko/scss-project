@@ -5,8 +5,8 @@
     <link rel="icon" href="/scss-project/favicon/favicon.png" type="image/x-icon" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cryptous</title>
-    <script type="module" crossorigin src="/scss-project/assets/index-CDgUOX7X.js"></script>
-    <link rel="stylesheet" crossorigin href="/scss-project/assets/index-hnldDZK7.css">
+    <script type="module" crossorigin src="/scss-project/assets/index-Cw0vJAsV.js"></script>
+    <link rel="stylesheet" crossorigin href="/scss-project/assets/index-BcyPUQ2P.css">
   </head>
   <body>
     <header class="header">
@@ -91,20 +91,24 @@
           <table class="prices-table">
             <thead>
               <th class="hide-mobile">
-                #
-                <svg class="arrow" width="5" height="5">
-                  <use href="/scss-project/images/icons.svg#arrow-up"></use>
-                </svg>
+                <div class="symbol-container">
+                  <p>#</p>
+                  <svg class="arrow" width="5" height="5">
+                    <use href="/scss-project/images/icons.svg#arrow-up"></use>
+                  </svg>
+                </div>
               </th>
               <th>Name</th>
               <th class="hide-mobile">Price</th>
               <th class="hide-mobile">24h %</th>
               <th class="hide-mobile">7d %</th>
               <th class="hide-mobile">
-                Market cap
-                <svg class="info" width="14" height="14">
-                  <use href="/scss-project/images/icons.svg#info"></use>
-                </svg>
+                <div class="market-container">
+                  <p>Market cap</p>
+                  <svg class="info" width="14" height="14">
+                    <use href="/scss-project/images/icons.svg#info"></use>
+                  </svg>
+                </div>
               </th>
               <th>Volume(24h)</th>
               <th class="hide-mobile">Last 7 days</th>
@@ -112,35 +116,113 @@
             <tbody>
               <tr>
                 <td class="hide-mobile">
-                  <svg class="star" width="12" height="12">
-                    <use href="/scss-project/images/icons.svg#star"></use>
-                  </svg>
-                  1
+                  <div class="numer-container">
+                    <svg class="star" width="12" height="12">
+                      <use href="/scss-project/images/icons.svg#star"></use>
+                    </svg>
+                    <p>1</p>
+                  </div>
                 </td>
                 <td>
-                  <img
-                    src="/scss-project/images/Ellipse 2.png"
-                    alt="bitcoin logo"
-                    class="table-logo"
-                    width="24"
-                    height="24"
-                  />
-                  <p class="table-crypto-name">Bitcoin<span>BTC</span></p>
+                  <div class="crypto-name">
+                    <img
+                      src="/scss-project/images/Ellipse 2.png"
+                      alt="bitcoin logo"
+                      class="table-logo"
+                      width="24"
+                      height="24"
+                    />
+                    <p class="table-crypto-name">Bitcoin<span>BTC</span></p>
+                  </div>
                 </td>
                 <td class="hide-mobile">$55,206.61</td>
                 <td class="hide-mobile">
-                  <svg class="trade-arrow" width="7" height="6">
-                    <use href="/scss-project/images/icons.svg#arrow-up"></use>
-                    <use href="/scss-project/images/icons.svg#arrow-down"></use>
-                  </svg>
-                  <p class="trade-value">0.92%</p>
+                  <div class="trade-container" data-status="up">
+                    <svg class="trade-arrow" width="7" height="6">
+                      <use class="up" href="/scss-project/images/icons.svg#arrow-up"></use>
+                      <use
+                        class="down"
+                        href="/scss-project/images/icons.svg#arrow-down"
+                      ></use>
+                    </svg>
+                    <p class="trade-value">0.92%</p>
+                  </div>
                 </td>
                 <td class="hide-mobile">
-                  <svg class="trade-arrow" width="7" height="6">
-                    <use href="/scss-project/images/icons.svg#arrow-up"></use>
-                    <use href="/scss-project/images/icons.svg#arrow-down"></use>
-                  </svg>
-                  <p class="trade-value">15.86%</p>
+                  <div class="trade-container" data-status="up">
+                    <svg class="trade-arrow" width="7" height="6">
+                      <use class="up" href="/scss-project/images/icons.svg#arrow-up"></use>
+                      <use
+                        class="down"
+                        href="/scss-project/images/icons.svg#arrow-down"
+                      ></use>
+                    </svg>
+                    <p class="trade-value">15.86%</p>
+                  </div>
+                </td>
+                <td class="hide-mobile">$1,046,899,935,348</td>
+                <td>
+                  <div class="table-content">
+                    <p>$1,046,899,935,348</p>
+                    <p class="table-details">653,452 BTC</p>
+                  </div>
+                </td>
+                <td class="hide-mobile">
+                  <div class="table-diagram">
+                    <svg class="chart-up" width="102" height="32">
+                      <use href="/scss-project/images/icons.svg#chart-up"></use>
+                    </svg>
+                    <svg class="dots" width="3" height="13">
+                      <use href="/scss-project/images/icons.svg#more"></use>
+                    </svg>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="hide-mobile">
+                  <div class="numer-container">
+                    <svg class="star" width="12" height="12">
+                      <use href="/scss-project/images/icons.svg#star"></use>
+                    </svg>
+                    <p>2</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="crypto-name">
+                    <img
+                      src="/scss-project/images/Ellipse_1.png"
+                      alt="Ethereum logo"
+                      class="table-logo"
+                      width="24"
+                      height="24"
+                    />
+                    <p class="table-crypto-name">Ethereum<span>ETH</span></p>
+                  </div>
+                </td>
+                <td class="hide-mobile">$55,206.61</td>
+                <td class="hide-mobile">
+                  <div class="trade-container" data-status="down">
+                    <svg class="trade-arrow" width="7" height="6">
+                      <use class="up" href="/scss-project/images/icons.svg#arrow-up"></use>
+                      <use
+                        class="down"
+                        href="/scss-project/images/icons.svg#arrow-down"
+                      ></use>
+                    </svg>
+                    <p class="trade-value">0.92%</p>
+                  </div>
+                </td>
+                <td class="hide-mobile">
+                  <div class="trade-container" data-status="up">
+                    <svg class="trade-arrow" width="7" height="6">
+                      <use class="up" href="/scss-project/images/icons.svg#arrow-up"></use>
+                      <use
+                        class="down"
+                        href="/scss-project/images/icons.svg#arrow-down"
+                      ></use>
+                    </svg>
+                    <p class="trade-value">15.86%</p>
+                  </div>
                 </td>
                 <td class="hide-mobile">$1,046,899,935,348</td>
                 <td>
@@ -162,85 +244,49 @@
               </tr>
               <tr>
                 <td class="hide-mobile">
-                  <svg class="star" width="12" height="12">
-                    <use href="/scss-project/images/icons.svg#star"></use>
-                  </svg>
-                  2
+                  <div class="numer-container">
+                    <svg class="star" width="12" height="12">
+                      <use href="/scss-project/images/icons.svg#star"></use>
+                    </svg>
+                    <p>3</p>
+                  </div>
                 </td>
                 <td>
-                  <img
-                    src="/scss-project/images/Ellipse_1.png"
-                    alt="Ethereum logo"
-                    class="table-logo"
-                    width="24"
-                    height="24"
-                  />
-                  <p class="table-crypto-name">Ethereum<span>ETH</span></p>
+                  <div class="crypto-name">
+                    <img
+                      src="/scss-project/images/Ellipse_6.png"
+                      alt="Cardano logo"
+                      class="table-logo"
+                      width="24"
+                      height="24"
+                    />
+                    <p class="table-crypto-name">Cardano<span>ADA</span></p>
+                  </div>
                 </td>
                 <td class="hide-mobile">$55,206.61</td>
                 <td class="hide-mobile">
-                  <svg class="trade-arrow" width="7" height="6">
-                    <use href="/scss-project/images/icons.svg#arrow-up"></use>
-                    <use href="/scss-project/images/icons.svg#arrow-down"></use>
-                  </svg>
-                  <p class="trade-value">0.92%</p>
-                </td>
-                <td class="hide-mobile">
-                  <svg class="trade-arrow" width="7" height="6">
-                    <use href="/scss-project/images/icons.svg#arrow-up"></use>
-                    <use href="/scss-project/images/icons.svg#arrow-down"></use>
-                  </svg>
-                  <p class="trade-value">15.86%</p>
-                </td>
-                <td class="hide-mobile">$1,046,899,935,348</td>
-                <td>
-                  <div class="table-content">
-                    <p>$1,046,899,935,348</p>
-                    <p class="table-details">653,452 BTC</p>
+                  <div class="trade-container" data-status="down">
+                    <svg class="trade-arrow" width="7" height="6">
+                      <use class="up" href="/scss-project/images/icons.svg#arrow-up"></use>
+                      <use
+                        class="down"
+                        href="/scss-project/images/icons.svg#arrow-down"
+                      ></use>
+                    </svg>
+                    <p class="trade-value">0.92%</p>
                   </div>
                 </td>
                 <td class="hide-mobile">
-                  <div class="table-diagram">
-                    <svg class="chart-up" width="100" height="30">
-                      <use href="/scss-project/images/icons.svg#chart-up"></use>
+                  <div class="trade-container" data-status="down">
+                    <svg class="trade-arrow" width="7" height="6">
+                      <use class="up" href="/scss-project/images/icons.svg#arrow-up"></use>
+                      <use
+                        class="down"
+                        href="/scss-project/images/icons.svg#arrow-down"
+                      ></use>
                     </svg>
-                    <svg class="dots" width="3" height="13">
-                      <use href="/scss-project/images/icons.svg#more"></use>
-                    </svg>
+                    <p class="trade-value">15.86%</p>
                   </div>
-                </td>
-              </tr>
-              <tr>
-                <td class="hide-mobile">
-                  <svg class="star" width="12" height="12">
-                    <use href="/scss-project/images/icons.svg#star"></use>
-                  </svg>
-                  3
-                </td>
-                <td>
-                  <img
-                    src="/scss-project/images/Ellipse_6.png"
-                    alt="Cardano logo"
-                    class="table-logo"
-                    width="24"
-                    height="24"
-                  />
-                  <p class="table-crypto-name">Cardano<span>ADA</span></p>
-                </td>
-                <td class="hide-mobile">$55,206.61</td>
-                <td class="hide-mobile">
-                  <svg class="trade-arrow" width="7" height="6">
-                    <use href="/scss-project/images/icons.svg#arrow-up"></use>
-                    <use href="/scss-project/images/icons.svg#arrow-down"></use>
-                  </svg>
-                  <p class="trade-value">0.92%</p>
-                </td>
-                <td class="hide-mobile">
-                  <svg class="trade-arrow" width="7" height="6">
-                    <use href="/scss-project/images/icons.svg#arrow-up"></use>
-                    <use href="/scss-project/images/icons.svg#arrow-down"></use>
-                  </svg>
-                  <p class="trade-value">15.86%</p>
                 </td>
                 <td class="hide-mobile">$1,046,899,935,348</td>
                 <td>
@@ -262,35 +308,49 @@
               </tr>
               <tr>
                 <td class="hide-mobile">
-                  <svg class="star" width="12" height="12">
-                    <use href="/scss-project/images/icons.svg#star"></use>
-                  </svg>
-                  4
+                  <div class="numer-container">
+                    <svg class="star" width="12" height="12">
+                      <use href="/scss-project/images/icons.svg#star"></use>
+                    </svg>
+                    <p>4</p>
+                  </div>
                 </td>
                 <td>
-                  <img
-                    src="/scss-project/images/Ellipse_3.png"
-                    alt="Tether logo"
-                    class="table-logo"
-                    width="24"
-                    height="24"
-                  />
-                  <p class="table-crypto-name">Tether<span>USDT</span></p>
+                  <div class="crypto-name">
+                    <img
+                      src="/scss-project/images/Ellipse_3.png"
+                      alt="Tether logo"
+                      class="table-logo"
+                      width="24"
+                      height="24"
+                    />
+                    <p class="table-crypto-name">Tether<span>USDT</span></p>
+                  </div>
                 </td>
                 <td class="hide-mobile">$55,206.61</td>
                 <td class="hide-mobile">
-                  <svg class="trade-arrow" width="7" height="6">
-                    <use href="/scss-project/images/icons.svg#arrow-up"></use>
-                    <use href="/scss-project/images/icons.svg#arrow-down"></use>
-                  </svg>
-                  <p class="trade-value">0.92%</p>
+                  <div class="trade-container" data-status="up">
+                    <svg class="trade-arrow" width="7" height="6">
+                      <use class="up" href="/scss-project/images/icons.svg#arrow-up"></use>
+                      <use
+                        class="down"
+                        href="/scss-project/images/icons.svg#arrow-down"
+                      ></use>
+                    </svg>
+                    <p class="trade-value">0.92%</p>
+                  </div>
                 </td>
                 <td class="hide-mobile">
-                  <svg class="trade-arrow" width="7" height="6">
-                    <use href="/scss-project/images/icons.svg#arrow-up"></use>
-                    <use href="/scss-project/images/icons.svg#arrow-down"></use>
-                  </svg>
-                  <p class="trade-value">15.86%</p>
+                  <div class="trade-container" data-status="up">
+                    <svg class="trade-arrow" width="7" height="6">
+                      <use class="up" href="/scss-project/images/icons.svg#arrow-up"></use>
+                      <use
+                        class="down"
+                        href="/scss-project/images/icons.svg#arrow-down"
+                      ></use>
+                    </svg>
+                    <p class="trade-value">15.86%</p>
+                  </div>
                 </td>
                 <td class="hide-mobile">$1,046,899,935,348</td>
                 <td>
@@ -312,35 +372,49 @@
               </tr>
               <tr>
                 <td class="hide-mobile">
-                  <svg class="star" width="12" height="12">
-                    <use href="/scss-project/images/icons.svg#star"></use>
-                  </svg>
-                  5
+                  <div class="numer-container">
+                    <svg class="star" width="12" height="12">
+                      <use href="/scss-project/images/icons.svg#star"></use>
+                    </svg>
+                    <p>5</p>
+                  </div>
                 </td>
                 <td>
-                  <img
-                    src="/scss-project/images/Ellipse_4.png"
-                    alt="Avalanche logo"
-                    class="table-logo"
-                    width="24"
-                    height="24"
-                  />
-                  <p class="table-crypto-name">Avalanche<span>AVAX</span></p>
+                  <div class="crypto-name">
+                    <img
+                      src="/scss-project/images/Ellipse_4.png"
+                      alt="Avalanche logo"
+                      class="table-logo"
+                      width="24"
+                      height="24"
+                    />
+                    <p class="table-crypto-name">Avalanche<span>AVAX</span></p>
+                  </div>
                 </td>
                 <td class="hide-mobile">$55,206.61</td>
                 <td class="hide-mobile">
-                  <svg class="trade-arrow" width="7" height="6">
-                    <use href="/scss-project/images/icons.svg#arrow-up"></use>
-                    <use href="/scss-project/images/icons.svg#arrow-down"></use>
-                  </svg>
-                  <p class="trade-value">0.92%</p>
+                  <div class="trade-container" data-status="down">
+                    <svg class="trade-arrow" width="7" height="6">
+                      <use class="up" href="/scss-project/images/icons.svg#arrow-up"></use>
+                      <use
+                        class="down"
+                        href="/scss-project/images/icons.svg#arrow-down"
+                      ></use>
+                    </svg>
+                    <p class="trade-value">0.92%</p>
+                  </div>
                 </td>
                 <td class="hide-mobile">
-                  <svg class="trade-arrow" width="7" height="6">
-                    <use href="/scss-project/images/icons.svg#arrow-up"></use>
-                    <use href="/scss-project/images/icons.svg#arrow-down"></use>
-                  </svg>
-                  <p class="trade-value">15.86%</p>
+                  <div class="trade-container" data-status="down">
+                    <svg class="trade-arrow" width="7" height="6">
+                      <use class="up" href="/scss-project/images/icons.svg#arrow-up"></use>
+                      <use
+                        class="down"
+                        href="/scss-project/images/icons.svg#arrow-down"
+                      ></use>
+                    </svg>
+                    <p class="trade-value">15.86%</p>
+                  </div>
                 </td>
                 <td class="hide-mobile">$1,046,899,935,348</td>
                 <td>
@@ -362,35 +436,49 @@
               </tr>
               <tr>
                 <td class="hide-mobile">
-                  <svg class="star" width="12" height="12">
-                    <use href="/scss-project/images/icons.svg#star"></use>
-                  </svg>
-                  6
+                  <div class="numer-container">
+                    <svg class="star" width="12" height="12">
+                      <use href="/scss-project/images/icons.svg#star"></use>
+                    </svg>
+                    <p>6</p>
+                  </div>
                 </td>
                 <td>
-                  <img
-                    src="/scss-project/images/Ellipse_5.png"
-                    alt="Algorand logo"
-                    class="table-logo"
-                    width="24"
-                    height="24"
-                  />
-                  <p class="table-crypto-name">Algorand<span>ALGO</span></p>
+                  <div class="crypto-name">
+                    <img
+                      src="/scss-project/images/Ellipse_5.png"
+                      alt="Algorand logo"
+                      class="table-logo"
+                      width="24"
+                      height="24"
+                    />
+                    <p class="table-crypto-name">Algorand<span>ALGO</span></p>
+                  </div>
                 </td>
                 <td class="hide-mobile">$55,206.61</td>
                 <td class="hide-mobile">
-                  <svg class="trade-arrow" width="7" height="6">
-                    <use href="/scss-project/images/icons.svg#arrow-up"></use>
-                    <use href="/scss-project/images/icons.svg#arrow-down"></use>
-                  </svg>
-                  <p class="trade-value">0.92%</p>
+                  <div class="trade-container" data-status="up">
+                    <svg class="trade-arrow" width="7" height="6">
+                      <use class="up" href="/scss-project/images/icons.svg#arrow-up"></use>
+                      <use
+                        class="down"
+                        href="/scss-project/images/icons.svg#arrow-down"
+                      ></use>
+                    </svg>
+                    <p class="trade-value">0.92%</p>
+                  </div>
                 </td>
                 <td class="hide-mobile">
-                  <svg class="trade-arrow" width="7" height="6">
-                    <use href="/scss-project/images/icons.svg#arrow-up"></use>
-                    <use href="/scss-project/images/icons.svg#arrow-down"></use>
-                  </svg>
-                  <p class="trade-value">15.86%</p>
+                  <div class="trade-container" data-status="up">
+                    <svg class="trade-arrow" width="7" height="6">
+                      <use class="up" href="/scss-project/images/icons.svg#arrow-up"></use>
+                      <use
+                        class="down"
+                        href="/scss-project/images/icons.svg#arrow-down"
+                      ></use>
+                    </svg>
+                    <p class="trade-value">15.86%</p>
+                  </div>
                 </td>
                 <td class="hide-mobile">$1,046,899,935,348</td>
                 <td>
