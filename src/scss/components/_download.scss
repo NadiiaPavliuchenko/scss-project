@@ -12,7 +12,8 @@
     "i"
     "l";
   gap: 30px;
-  justify-items: center;
+  justify-content: center;
+  align-items: center;
 
   @include mx.mq("md") {
     justify-items: start;

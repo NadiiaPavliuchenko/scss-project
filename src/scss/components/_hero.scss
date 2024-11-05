@@ -26,7 +26,7 @@
 
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
   }
 }
 .hero-shape-svg {
@@ -70,5 +70,28 @@
 .hero-img {
   @include mx.mq("lg", max) {
     display: none;
+  }
+}
+
+.hero-scroll {
+  @include mx.ease("fast", color);
+  color: fn.get-color("primary-white");
+
+  &:hover,
+  :focus {
+    color: fn.get-color("button-color");
+  }
+
+  .scroll {
+    position: absolute;
+    top: 600px;
+    left: calc(100vw / 2);
+
+    fill: fn.get-color("transparent");
+    stroke: fn.get-color("current");
+
+    @include mx.mq("lg", max) {
+      display: none;
+    }
   }
 }
